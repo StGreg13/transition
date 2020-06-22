@@ -1,0 +1,50 @@
+.box {
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  width: 300px;
+  height: 300px;
+  background: url(../img/1.jpg) no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+}
+.box:hover .wrap {
+  transform: translateX(0%) rotate(0);
+  background-color: rgba(39, 39, 39, 0.8);
+  opacity: 1;
+}
+.wrap {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  transform: translateX(100%) rotate(-45deg);
+}
+.sign {
+  text-align: center;
+}
+.sign a {
+  display: block;
+  width: 200px;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.sign a:hover {
+  text-decoration: none;
+  background-color: #fff;
+  color: #000;
+}
